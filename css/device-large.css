@@ -1,0 +1,30 @@
+:root {
+    --font-regular: "Assistant-Regular";
+    --font-bold: "Assistant-Bold";
+    --text-color-black: #282c3f;
+    --text-color-grey: #696b79;
+}
+
+@font-face {
+    font-family: "Assistant-Regular";
+    src: url("../assets/fonts/Assistant-Regular.woff");
+}
+
+@font-face {
+    font-family: "Assistant-Bold";
+    src: url("../assets/fonts/Assistant-Bold.woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
