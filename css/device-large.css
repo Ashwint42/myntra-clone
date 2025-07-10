@@ -775,3 +775,108 @@ header {
     display: inline-block;
     font-family: var(--font-bold);
 }
+
+.pagination-wrapper {
+    text-align: center;
+    border-top: 1px solid #edebef;
+    padding-top: 24px;
+    padding-bottom: 60px;
+    margin-top: 46px;
+}
+
+.pagination-page1 {
+    display: inline-block;
+    font-family: var(--font-bold);
+    cursor: pointer;
+    padding: 6px 8px;
+    border-radius: 2px;
+    opacity: 0.6;
+}
+
+.pagination-double-arrow {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 8px;
+    margin-right: 8px;
+}
+
+.pagination-double-arrow::before,
+.pagination-double-arrow::after {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border: solid #282c3f;
+    border-width: 2.7px 2.7px 0 0;
+    transform: rotate(224deg) scale(0.75) translate(3px, 1px);
+}
+
+.pagination-double-arrow::after {
+    left: 8px;
+}
+
+.pagination-previous {
+    display: inline-block;
+    height: 42px;
+    border-radius: 4px;
+    border: 1px solid #d4d5d9;
+    text-align: center;
+    margin-right: 64px;
+    padding: 10px 22px;
+    font-family: var(--font-bold);
+    opacity: 0.6;
+    transform: translateX(6px);
+}
+
+.pagination-arrow-left {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: solid #282c3f;
+    border-width: 2px 2px 0 0;
+    margin-bottom: 1px;
+    margin-right: 8px;
+    transform: rotate(224deg);
+    margin-left: 2px;
+}
+
+.pagination-numbers {
+    display: inline-block;
+    color: #535766;
+    font-size: 14px;
+    margin-top: 6px;
+    margin-right: 10px;
+    cursor: default;
+    font-weight: 400;
+    padding: 6px 8px;
+    border-radius: 2px;
+    transform: translateX(3px);
+}
+
+.pagination-next {
+    height: 42px;
+    border-radius: 4px;
+    border: 1px solid #d4d5d9;
+    text-align: center;
+    margin-left: 64px;
+    padding: 10px 22px;
+    display: inline-block;
+    margin-right: 9px;
+    font-family: var(--font-bold);
+}
+
+.pagination-arrow-right {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: solid #282c3f;
+    border-width: 2px 2px 0 0;
+    margin-bottom: 1px;
+    margin-left: 8px;
+    transform: rotate(45deg);
+    margin-right: 2px;
+}
