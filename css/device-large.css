@@ -950,3 +950,53 @@ header {
     transform: rotate(45deg);
     margin-right: 2px;
 }
+
+.discount-offer-banner-container {
+    width: 288px;
+    height: 43.88px;
+    background-color: #535766;
+    z-index: 800;
+    position: fixed;
+    bottom: 253px;
+    transform: rotate(-90deg);
+    right: -122px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.discount-banner-text {
+    padding: 4px;
+    height: 200px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    font-family: var(--font-bold);
+    letter-spacing: 1px;
+}
+
+.discount-banner-arrow {
+    border-right: 14px solid #fff;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    transform: rotate(90deg) translate(11px, 10px);
+}
+
+.bell-icon {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 801;
+    border-radius: 100px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+    background-color: rgb(29, 133, 252);
+    bottom: 80px;
+    right: 20px;
+}
