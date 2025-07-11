@@ -38,4 +38,14 @@ function createCard(product) {
     return card;
 }
 
-export { createCard }
+function renderCardHMTL(products) {
+    const cardsWrapper = document.querySelector('.cards-wrapper');
+    let renderedHTML = ``;
+    products.forEach(product => {
+        renderedHTML += createCard(product);
+    })
+
+    cardsWrapper.innerHTML = renderedHTML;
+}
+
+export { createCard, renderCardHMTL }
