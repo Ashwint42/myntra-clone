@@ -986,7 +986,7 @@ header {
 }
 
 .bell-icon {
-    position: absolute;
+    position: fixed;
     width: 44px;
     height: 44px;
     display: flex;
