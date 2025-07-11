@@ -537,13 +537,13 @@ header {
     background-color: #fff;
     border: 1px solid #d4d5d9;
     display: flex;
-    justify-content: space-between;
 }
 
 .sort-criteria-text {
     font-family: var(--font-bold);
     color: #282c3f;
-    transform: translateX(-30.5px);
+    transform: translateX(3px);
+    justify-self: flex-start;
 }
 
 .sort-down-arrow {
@@ -555,6 +555,8 @@ header {
     display: inline-block;
     margin-left: 5px;
     margin-top: 5px;
+    position: absolute;
+    right: 14px;
 }
 
 .sort-criteria-list {
@@ -565,7 +567,7 @@ header {
     left: -1px;
     margin: 0;
     padding: 16px 0;
-    z-index: 2;
+    z-index: 300;
     border: 1px solid #d4d5d9;
     border-top: none;
     box-shadow: 0 8px 10px 0 rgba(0, 0, 0, .08);

@@ -1,8 +1,9 @@
 import { fetchProducts } from "./utils.js";
-import { attachWindowListeners } from "./eventlisteners.js";
+import { attachWindowListeners, attachSortMenuListeners } from "./eventlisteners.js";
 
 async function main() {
     attachWindowListeners();
+    attachSortMenuListeners();
 }
 
 main();

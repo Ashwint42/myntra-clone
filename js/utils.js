@@ -19,4 +19,13 @@ function calculateDiscountPercentage(price, originalPrice) {
 }
 
 
-export { generateRatingCount, fetchProducts, calculateDiscountPercentage }
+function sortProducts(products, criteria, order) {
+
+    if (criteria === 'rating')
+        return products.sort((a, b) => b.rating.stars - a.rating.stars);
+
+    return order < 0 ? products.sort((a, b) => a[criteria] - b[criteria])
+        : products.sort((a, b) => b[criteria] - a[criteria]);
+}
+
+export { generateRatingCount, fetchProducts, calculateDiscountPercentage, sortProducts }
