@@ -1,6 +1,6 @@
 async function fetchProducts() {
     try {
-        const response = await fetch("/myntra-clone/products.json");
+        const response = await fetch("../products.json");
         const data = await response.json();
         return data.products;
     } catch (error) {
