@@ -357,4 +357,90 @@
         padding-left: 15px;
         height: 38px;
     }
+
+    .mb-sort-menu-overlayer {
+        width: 100vh;
+        height: 100vh;
+        display: block;
+        opacity: 1;
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, .5);
+        z-index: 2000;
+    }
+
+    .mb-sort-menu {
+        position: fixed;
+        inset: 0;
+        top: auto;
+        height: auto;
+        max-height: 100%;
+    }
+
+    .mb-sort-menu-wrapper {
+        background-color: #fff;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+    }
+
+    .mb-sort-menu-items {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        overflow: hidden;
+    }
+
+    .mb-sort-menu-heading {
+        border-bottom: 1px solid #eaeaec;
+        font-size: 14px;
+        font-family: var(--font-bold);
+        color: #3e4152;
+        padding-left: 10px;
+        margin: 0 10px;
+        padding-top: 12px;
+        padding-bottom: 8px;
+    }
+
+    .mb-sort-criteria {
+        margin: 15px auto;
+    }
+
+    .mb-sort-criteria-wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .mb-sort-criteria-wrapper button {
+        width: 100%;
+        display: inline-block;
+        border: none;
+        text-transform: none;
+        text-align: left;
+        color: #3e4152;
+        background: #fff;
+    }
+
+    .mb-sort-criteria-wrapper button svg {
+        width: 24px;
+        height: 24px;
+        float: left;
+        position: relative;
+        top: 5px;
+        right: -23px;
+        overflow: hidden;
+    }
+
+    .mb-sort-criteria-text {
+        padding: 7.5px 0;
+        position: absolute;
+        width: 82%;
+        top: 0;
+        font-size: 14px;
+        left: 65px;
+    }
+
+    .active-sort-criteria {
+        color: #ff3f6c;
+        font-family: var(--font-bold);
+    }
 }

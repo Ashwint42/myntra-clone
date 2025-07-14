@@ -70,7 +70,7 @@ function createCardMobile(product) {
                                                         d="M7 6.215h4.962v2.43H7.505L7.13 9.858h4.764a3.05 3.05 0 01-.827 1.539 2.99 2.99 0 01-2.022.895l-1.361-.003a.304.304 0 00-.214.519l6.717 6.779 1.697-.004-6.107-6.16a4.193 4.193 0 002.14-1.167 4.256 4.256 0 001.198-2.398h2.474l.376-1.215h-2.799v-2.43h3.496V5H7v1.215z">
                                                     </path>
                                                 </g>
-                                            </svg><span class="mb-price-text">1199</span>
+                                            </svg><span class="mb-price-text">${product.price}</span>
                                         </span>
                                         <span class="mb-product-original-price">
                                             <svg width="10" height="10" viewBox="0 0 9 10" class="strike-rupees">
@@ -80,9 +80,9 @@ function createCardMobile(product) {
                                                     </path>
                                                     <path d="M0 6.104v-.792h8.14v.792z"></path>
                                                 </g>
-                                            </svg><span class="mb-original-price-text">2499</span>
+                                            </svg><span class="mb-original-price-text">${product.originalPrice}</span>
                                         </span>
-                                        <span class="mb-discount-percentage"><span class="mb-discount-text">(52%
+                                        <span class="mb-discount-percentage"><span class="mb-discount-text">(${calculateDiscountPercentage(product.price, product.originalPrice)}%
                                                 OFF)</span></span>
                                     </div>
                                 </div>
