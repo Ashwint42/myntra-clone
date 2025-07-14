@@ -28,7 +28,7 @@ function sortProducts(products, criteria, order) {
         : products.sort((a, b) => b[criteria] - a[criteria]);
 }
 
-async function sortByCriteria(criteria, device) {
+async function sortByCriteria(criteria) {
     const products = await fetchProducts();
     let sortedProducts;
     switch (criteria) {
