@@ -7,6 +7,11 @@
         display: none !important;
     }
 
+    .header-mobile,
+    .main-mobile {
+        display: block !important;
+    }
+
     .header-mobile {
         width: 100%;
         position: fixed;
