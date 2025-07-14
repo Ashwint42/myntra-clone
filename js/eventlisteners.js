@@ -1,9 +1,13 @@
 import { fetchProducts, sortProducts } from "./utils.js";
 import { renderCardHMTL } from "./card.js";
 
-function attachWindowListeners() {
+async function attachWindowListeners() {
+    const products = await fetchProducts();
     window.addEventListener('load', async () => {
-        const products = await fetchProducts();
+        renderCardHMTL(products);
+    })
+
+    window.addEventListener("resize", async () => {
         renderCardHMTL(products);
     })
 }
