@@ -30,6 +30,7 @@ function cardTemplateDesktop(product) {
                             </span>
                             <span class="product-discount-price">(${calculateDiscountPercentage(product.price, product.originalPrice)}% OFF)</span>
                         </div>
+                        ${product.fewLeft ? '<div class="few-left">Only Few Left!</div>' : ""}
                     </div>
                 </div>
             </li>

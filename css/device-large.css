@@ -1,5 +1,6 @@
 .header-mobile,
-.main-mobile {
+.main-mobile,
+.footer-mobile {
     display: none;
 }
 
@@ -856,7 +857,7 @@ header {
     border-top: 1px solid #edebef;
     padding-top: 24px;
     padding-bottom: 60px;
-    margin-top: 46px;
+    margin-top: 44px;
 }
 
 .pagination-page1 {
@@ -1004,4 +1005,104 @@ header {
     background-color: rgb(29, 133, 252);
     bottom: 80px;
     right: 20px;
+}
+
+.few-left {
+    font-size: 12px;
+    color: #ff5722;
+    text-align: left;
+    font-family: var(--font-bold);
+    margin-top: 6.5px;
+}
+
+.footer-desktop {
+    width: 100%;
+    position: relative;
+}
+
+.footer-container {
+    position: relative;
+    z-index: 5;
+    padding: 30px 0px 40px 0px;
+    background: mistyrose;
+    margin-top: 65px;
+}
+
+.footer-wrapper {
+    max-width: 1080px;
+    min-width: 980px;
+    margin: auto;
+}
+
+.footer-buying-guide-section {
+    width: 100%;
+    padding: 20px 0 60px;
+    color: #535766;
+    text-align: justify;
+}
+
+.footer-right-price-chart {
+    max-width: 410px;
+    float: right;
+    padding-left: 30px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.footer-right-heading,
+.footer-left-heading {
+    text-align: center;
+    color: #696b79;
+    font-size: 16px;
+    font-family: var(--font-bold);
+    margin-bottom: -10px;
+    margin-top: 31px;
+}
+
+.footer-left-container {
+    width: 61%;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.price-chart-content {
+    margin-top: 40px;
+    display: table;
+    border-collapse: collapse;
+    font-size: 12px;
+    background-color: orange;
+}
+
+.price-chart-content th {
+    display: table-cell;
+    text-align: left;
+    padding: 8px;
+    color: #535766;
+}
+
+tbody tr td {
+    padding: 8px;
+    text-align: left;
+}
+
+tbody tr td:nth-child(2) {
+    color: #535766
+}
+
+.footer-left-container p {
+    margin-bottom: 14px;
+    color: #7e818c;
+}
+
+.footer-left-container p strong {
+    text-transform: uppercase;
+    color: #696b79;
+    font-size: 13px;
+    font-family: var(--font-bold);
+}
+
+.footer-bold-styler {
+    font-family: var(--font-bold);
+    color: #7e818c;
 }

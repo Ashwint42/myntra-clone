@@ -2,13 +2,15 @@
 
     .header-desktop,
     .main-desktop,
+    .footer-desktop,
     .discount-offer-banner-container,
     .bell-icon {
         display: none !important;
     }
 
     .header-mobile,
-    .main-mobile {
+    .main-mobile,
+    .footer-mobile {
         display: block !important;
     }
 
@@ -442,5 +444,25 @@
     .active-sort-criteria {
         color: #ff3f6c;
         font-family: var(--font-bold);
+    }
+
+    .footer-mobile {
+        width: 100%;
+    }
+
+    .mb-footer-heading-container {
+        padding: 10px 18px 90px 18px;
+    }
+
+    .mb-footer-heading {
+        width: 85%;
+        line-height: 24px;
+        font-size: 13px;
+        font-family: var(--font-bold);
+        text-align: left;
+        white-space: nowrap;
+        color: rgb(62, 65, 82);
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
