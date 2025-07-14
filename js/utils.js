@@ -44,4 +44,10 @@ async function sortByCriteria(criteria) {
     return sortedProducts
 }
 
-export { generateRatingCount, fetchProducts, calculateDiscountPercentage, sortProducts, sortByCriteria }
+export {
+    generateRatingCount,
+    fetchProducts,
+    calculateDiscountPercentage,
+    sortProducts,
+    sortByCriteria
+}

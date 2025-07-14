@@ -1,6 +1,6 @@
 import { generateRatingCount, calculateDiscountPercentage } from "./utils.js";
 
-function createCard(product) {
+function cardTemplateDesktop(product) {
     let card = `
                 <li class="card">
                 <div class="card-ratings-container">
@@ -38,7 +38,7 @@ function createCard(product) {
     return card;
 }
 
-function createCardMobile(product) {
+function cardTemplateMobile(product) {
     let card = `<li class="mb-card">
                         <div class="mb-card-wrapper">
                             <div class="mb-card-image-container">
@@ -106,23 +106,23 @@ function createCardMobile(product) {
 }
 
 function renderCardHMTL(products) {
-    const cardsWrapper = document.querySelector('.cards-wrapper');
+    const cardsWrapperDesktop = document.querySelector('.cards-wrapper');
     const cardsWrapperMobile = document.querySelector('.mb-card-layout-wrapper');
     let renderedHTML = ``;
 
-    let cardRenderer = createCard;
-    let cardsContainer = cardsWrapper;
+    let cardTemplate = cardTemplateDesktop;
+    let cardsContainer = cardsWrapperDesktop;
 
     if (window.innerWidth <= 767) {
-        cardRenderer = createCardMobile;
+        cardTemplate = cardTemplateMobile;
         cardsContainer = cardsWrapperMobile;
     }
 
     products.forEach(product => {
-        renderedHTML += cardRenderer(product);
+        renderedHTML += cardTemplate(product);
     })
 
     cardsContainer.innerHTML = renderedHTML;
 }
 
-export { createCard, renderCardHMTL, }
+export { renderCardHMTL }

@@ -68,4 +68,8 @@ async function attachSortMenuListenerMobile() {
     })
 }
 
-export { attachWindowListeners, attachSortMenuListeners, attachSortMenuListenerMobile }
+export {
+    attachWindowListeners,
+    attachSortMenuListeners,
+    attachSortMenuListenerMobile
+}
