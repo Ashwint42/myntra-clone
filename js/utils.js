@@ -28,4 +28,20 @@ function sortProducts(products, criteria, order) {
         : products.sort((a, b) => b[criteria] - a[criteria]);
 }
 
-export { generateRatingCount, fetchProducts, calculateDiscountPercentage, sortProducts }
+async function sortByCriteria(criteria, device) {
+    const products = await fetchProducts();
+    let sortedProducts;
+    switch (criteria) {
+        case "price-lh": sortedProducts = sortProducts(products, "price", -1);
+            break;
+        case "price-hl": sortedProducts = sortProducts(products, "price", 1);
+            break;
+        case "rating-lh": sortedProducts = sortProducts(products, "rating", -1);
+        default:
+            sortedProducts = products;
+    }
+
+    return sortedProducts
+}
+
+export { generateRatingCount, fetchProducts, calculateDiscountPercentage, sortProducts, sortByCriteria }
