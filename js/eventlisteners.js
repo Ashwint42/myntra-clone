@@ -5,9 +5,6 @@ let previousElement = document.querySelector('#price-lh');
 
 async function attachWindowListeners() {
     const products = await fetchProducts();
-    window.addEventListener('load', async () => {
-        renderCardHMTL(products);
-    })
 
     window.addEventListener("resize", async () => {
         renderCardHMTL(products);

@@ -1,10 +1,18 @@
 import { fetchProducts } from "./utils.js";
-import { attachWindowListeners, attachSortMenuListeners, attachSortMenuListenerMobile } from "./eventlisteners.js";
+import { renderCardHMTL } from "./card.js";
+import {
+    attachWindowListeners,
+    attachSortMenuListeners,
+    attachSortMenuListenerMobile
+} from "./eventlisteners.js";
 
-async function main() {
+
+window.addEventListener('load', async () => {
+    const products = await fetchProducts();
+
     attachWindowListeners();
     attachSortMenuListeners();
     attachSortMenuListenerMobile();
-}
+    renderCardHMTL(products);
 
-main();
+})

@@ -422,7 +422,8 @@
         background: #fff;
     }
 
-    .mb-sort-criteria-wrapper button svg {
+    .mb-sort-criteria-wrapper button svg,
+    .mb-sort-criteria-wrapper button img {
         width: 24px;
         height: 24px;
         float: left;
