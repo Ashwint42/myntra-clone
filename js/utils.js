@@ -21,6 +21,13 @@ function calculateDiscountPercentage(price, originalPrice) {
 
 function sortProducts(products, criteria, order) {
 
+    // order < 0 ? sort in ascending order : sort in descending order
+    if (criteria === 'discount') {
+        products.forEach(product => {
+            const productDiscount = calculateDiscountPercentage(product.price, product.originalPrice);
+            product.discount = productDiscount;
+        })
+    }
     if (criteria === 'rating')
         return products.sort((a, b) => b.rating.stars - a.rating.stars);
 
@@ -37,6 +44,8 @@ async function sortByCriteria(criteria) {
         case "price-hl": sortedProducts = sortProducts(products, "price", 1);
             break;
         case "rating-lh": sortedProducts = sortProducts(products, "rating", -1);
+            break;
+        case "discount": sortedProducts = sortProducts(products, "discount", 1);
         default:
             sortedProducts = products;
     }
